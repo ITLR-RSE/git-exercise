@@ -7,8 +7,8 @@ from math import isclose
 
 class Vector:
     def __init__(self, coordinates: List[float]) -> None:
-        # self._coordinates = coordinates.copy()
-        self._coordinates = coordinates # Task A
+        self._coordinates = coordinates.copy()
+        # self._coordinates = coordinates # Task A
 
     def __getitem__(self, i: int) -> float:
         return self._coordinates[i]
@@ -50,5 +50,3 @@ def test_3d_vector_subtraction() -> None:
     assert isclose(v[0], 2.1)
     assert isclose(v[1], 4.2)
     assert isclose(v[2], 6.3)
-    
-    assert True
